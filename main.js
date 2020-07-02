@@ -14,7 +14,7 @@ function getmovies(moviname){
         let display=''
         $.each(movie_list,function(index,movie){
          display+=`
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-3">
             <div class="well text-center">
                 <img src="${movie.Poster}">
                 <h5>${movie.Title}</h5>
@@ -48,10 +48,10 @@ function getmovie(){
 
          let display=`
          <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4">
                 <img src="${movie.Poster}" class="thumbnail"> 
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-8">
                      <h2   >${movie.Title}<h2>
                      <ul class="list-group" >
                      <li class="list-group-item"> <b>Genre : </b>${movie.Genre} </li>
