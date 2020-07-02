@@ -1,0 +1,51 @@
+#movies img ,#movie img{
+    background-color: red;
+    width:90%;
+    height: 100%;
+}
+@media(min-width:960px){
+    #movies col-md-3 .well{
+        height:70%;
+    }
+    
+    #movies col-md-3 img{
+        height:100%;
+    }
+}
+
+
+#movie ul li{
+    height: 10%;
+    font-size: 40%;
+    padding: 5px;
+    color:rgb(64, 209, 228);
+}
+#movie{
+    color: rgb(115, 115, 226);
+}
+
+#space{
+    height: 100px;
+    background-image:linear-gradient(black,rgb(17, 17, 88),black)
+}
+.btn{
+    background-color:rgb(24, 42, 206);
+}
+
+#moviename{
+    background-color: rgb(62, 62, 230);
+    color: white;
+    font-style: bold;
+ 
+}
+.credits h6{
+    background-image: red;
+    height:100px;
+    display: flex;
+    align-items: center;
+     justify-content: space-around;
+}
+
+img{
+    border:3px rgb(3, 25, 99) solid;
+ }

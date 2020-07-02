@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+           <div class="navbar-header">
+               <a href="" class="navbar-brand">MOVIE INFO</a>
+           </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Search By Movie Name</h2>
+            <form action="" id="searchform" style="text-align: center;">
+                <input type="text" class="form-control" id="moviename" placeholder="Search Movies"  style="text-align: center;">
+                <input type="submit" class="btn btn-primary btn-lg" value="Search">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+    <div class="credits text-center">
+        <h6>created by vikas sao</h6>
+    </div>
+
+     
+    
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ 
+  <script src="main.js"></script>
+</html>
+
+
+<!-- <div class="col-md-3">
+    <div class="well text-center">
+        <img src="${movie.poster}">
+        <h5>${movie.title}</h5>
+        <a onclick="movieselected('${movie.imdbID}')" href="#" class="btn btn-primary">Movie Details</a>
+
+    </div>
+</div> -->
+
+
+<!-- <div class="row">
+    <div class="col-md-4">
+        <img src="${movie.Poster}" class="thumbnail">
+        <h5>${movie.title}</h5>
+        <a onclick="movieselected('${movie.imdbID}')" href="#" class="btn btn-primary">Movie Details</a> 
+    </div>
+    <div class="col-md-8">
+
+    </div>
+</div> -->
+
+<!-- <a href="http://imdb.com/title/${movie.Title}" class="btn btn-primary" target="_blank"></a>
+<a href="index.html" class="btn btn-default">Back to the Home Page</a> -->
