@@ -8,7 +8,7 @@ $(document).ready(function(){
 
  
 function getmovies(moviname){
-    axios.get('http://www.omdbapi.com/?apikey=efa0276f&s='+moviname)
+    axios.get('https://www.omdbapi.com/?apikey=efa0276f&s='+moviname)
     .then(function(response){ 
         let movie_list=response.data.Search;
         let display=''
@@ -41,7 +41,7 @@ function movieselected(id){
 
 function getmovie(){
     let movieid=sessionStorage.getItem('movieid')
-    axios.get('http://www.omdbapi.com/?apikey=efa0276f&i='+movieid)
+    axios.get('https://www.omdbapi.com/?apikey=efa0276f&i='+movieid)
     .then(function(response){ 
           let movie=response.data;
         console.log(movie)
