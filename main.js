@@ -13,10 +13,14 @@ function getmovies(moviname){
         let movie_list=response.data.Search;
         let display=''
         $.each(movie_list,function(index,movie){
+            var poster=1;
+            if(movie.Poster=="N/A"){poster='default.png'}
+            else{poster=movie.Poster;}
+            
          display+=`
         <div class="col-md-3 col-sm-3">
             <div class="well text-center">
-                <img src="${movie.Poster}">
+                <img src="${poster}">
                 <h5>${movie.Title}</h5>
                 <a onclick="movieselected('${movie.imdbID}')" href="#" class="btn btn-primary">Movie Details</a>
 
@@ -45,11 +49,14 @@ function getmovie(){
     .then(function(response){ 
           let movie=response.data;
         console.log(movie)
+        var poster=1;
+            if(movie.Poster=="N/A"){poster='default.png'}
+            else{poster=movie.Poster;}
 
          let display=`
          <div class="row">
                 <div class="col-sm-4">
-                <img src="${movie.Poster}" class="thumbnail"> 
+                <img src="${poster}" class="thumbnail"> 
                 </div>
                 <div class="col-sm-8">
                      <h2   >${movie.Title}<h2>
